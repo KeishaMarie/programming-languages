@@ -1,6 +1,21 @@
-window.onload = function() {
-  let form = document.querySelector("form");
-  form.onsubmit = function(event) {
+window.addEventListener("load", function() {
+  let form = document.getElementById("survey");
+  form.addEventListener("submit", function(event) {
     event.preventDefault();
+    const animal = document.getElementByName("animal").value;
+    const color = document.getElementByName("color").value;
+    const mushroom = document.getElementByName("mushroom").value;
+    const flower = document.getElementByName("flower").value;
+    const food = document.getElementByIName("food").value;
+
+  let result;
+  if(animal === "redPanda") {
+    result = document.getElementByName("ruby)")
+  } else if (animal === manatee) {
+    result = "c#";
   }
-}
+  document.getElementById("output").innerText = result;
+  document.querySelector("div#output").removeAttribute("class");
+
+  });
+});

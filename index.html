@@ -8,7 +8,7 @@
 <body>
   <h1>Which Programming Language is Best for You?</h1>
   <br>
-  <form>
+  <form id="survey"></form>
   <h3>Which animal would you rather spend the day with?</h3>
     <input type="radio" name="animal" value="redPanda">
     <label for="redPanda">Red Panda</label>
@@ -33,7 +33,7 @@
     <input type="radio" name="flower" value="dahlia">
     <label for="dahlia">Dahlia</label>
 
-  <h3>What is your favorite food</h3>
+  <h3>Which food brings you the most joy?</h3>
     <input type="radio" name="food" value="momsSpaghetti">
     <label for="momsSpaghetti">Mom's Spaghetti</label>
     <input type="radio" name="food" value="tacos">
@@ -43,7 +43,14 @@
     <br>
     <button type="submit">Best Language for Me</button>
   </form> 
+  
+<div id="output" class="hidden">
   <h2>Result</h2>
-  <p id="output"></p>
+    <p id="ruby" type="text" value="language"></p>
+    <label for="language">Ruby</label>
+    <label for="c#">C#</label>
+    <label for="python">Python</label>
+</div>  
+  
 </body>
 </html>
