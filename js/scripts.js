@@ -21,8 +21,12 @@ window.addEventListener("load", function() {
   } else if (animal === manatee) {
     result = "c#";
   }
+ 
+
+
+
   document.getElementById("output").innerText = result;
-  document.querySelector("div#output").removeAttribute("class");
+  // document.querySelector("div#output").removeAttribute("class");
 
   });
 });
