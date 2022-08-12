@@ -1,3 +1,10 @@
+function hideResults() {
+  document.getElementById("ruby").setAttribute("class", "hidden");
+  document.getElementById("c#").setAttribute("class", "hidden");
+  document.getElementById("python").setAttribute("class", "hidden");
+
+}
+
 window.addEventListener("load", function() {
   let form = document.getElementById("survey");
   form.addEventListener("submit", function(event) {
@@ -10,7 +17,7 @@ window.addEventListener("load", function() {
 
   let result;
   if(animal === "redPanda") {
-    result = document.getElementByName("ruby)")
+    result = document.getElementById("ruby)")
   } else if (animal === manatee) {
     result = "c#";
   }
