@@ -9,51 +9,51 @@ window.addEventListener("load", function() {
   const form = document.getElementById("survey");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-    const animal = document.getElementByName("animal").value;
-    const color = document.getElementByName("color").value;
-    const mushroom = document.getElementByName("mushroom").value;
-    const flower = document.getElementByName("flower").value;
-    const food = document.getElementByIName("food").value;
+    const animal = document.getElementsByName("animal").value;
+    const color = document.getElementsByName("color").value;
+    const mushroom = document.getElementsByName("mushroom").value;
+    const flower = document.getElementsByName("flower").value;
+    const food = document.getElementsByName("food").value;
+  });
 
-  let animalResult;
+  let animal = document.querySelector("animal");
   if(animal === "redPanda") {
-    result = document.getElementById("ruby");
-  } else if (animal === manatee) {
-    result = document.getElementById("c#");
+    result = document.getElementById("ruby").removeAttribute("class", "hidden");
+  } else if (animal === "manatee") {
+    result = document.getElementById("c#").removeAttribute("class", "hidden");;
   }
 
-  let colorResult;
+  let color = document.querySelector("color");
   if(color === "periwinkle") {
-    result = document.getElementById("python");
+    result = document.getElementById("python").removeAttribute("class", "hidden");;
    } else if (color === "emeraldGreen") {
-    result = document.getElementById("ruby");
+    result = document.getElementById("ruby").removeAttribute("class", "hidden");;
    }
 
-   let mushroomResult;
+   let mushroom = document.querySelector("mushroom");
    if(mushroom === "biolumMushroom") {
-    result = document.getElementById("c#");
+    result = document.getElementById("c#").removeAttribute("class", "hidden");;
    } else if(mushroom === "cordycep") {
-    result = document.getElementById("python");
+    result = document.getElementById("python").removeAttribute("class", "hidden");;
    }
 
-  let flowerResult;
+  let flower = document.querySelector("flower");
   if(flower === "orchid") {
-    result = document.getElementById("ruby");
+    result = document.getElementById("ruby").removeAttribute("class", "hidden");;
   } else if(flower === "dahlia") {
-    result = document.getElementById("c#");
+    result = document.getElementById("c#").removeAttribute("class", "hidden");;
   }
 
-  let foodResult;
+  let food = document.querySelector("food");
   if(food === "momsSpaghetti") {
-    result = document.getElementById("python");
+    result = document.getElementById("python").removeAttribute("class", "hidden");;
   } else if(food === "tacos") {
-    result = document.getElementById("ruby");
+    result = document.getElementById("ruby").removeAttribute("class", "hidden");;
   }
   });
-});
  
 
 
 
-  document.getElementById("output").innerText = result;
+  // document.getElementById("output").innerText = result;
   // document.querySelector("div#output").removeAttribute("class");

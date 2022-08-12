@@ -12,7 +12,7 @@
 
 ## Description
 
-This webpage contains a survey with targeted questions which will help you determine what programming language is best for you. While the questions may seem unrelated, they have been "scientifically" proven to dive deep into your subconcious to evaluate how your brain processes information and suggest a programming language based on your results. Simply choose one option for each question and click the 'Best Language for Me' button. This will populate the best programming language for you based on your answers.
+This webpage contains a survey with targeted questions which will help you determine what programming language is best for you. While the questions may seem unrelated, they have been "scientifically" proven to dive deep into your subconcious to evaluate how your brain processes information and suggest a programming language based on your results. Simply choose one option for each question and click the 'Find Out!' button. This will populate the best programming language for you based on your answer. After you recieve an answer for each, whichever has the most results is the language best for you.
 
 ## Setup/Installation Requirements
 
