@@ -16,7 +16,7 @@ This webpage contains a survey with targeted questions which will help you deter
 
 ## Setup/Installation Requirements
 
-* Open your terminal and create a new folder with `mkdir` command. This is where your repository will be stored locally so it is suggested to use a directory name similar to "best programming language for me".
+* Open your terminal and create a new folder with `mkdir` command. This is where your repository will be stored locally.
 * Navigate to https://github.com/KeishaMarie/programming-languages .
 * Click on the green code button to open dropdown and copy link to clone programming-languages.
 * Open folder in your text editor.
