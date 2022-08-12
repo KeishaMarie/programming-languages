@@ -14,14 +14,16 @@
     most. This survey will help guide you in the right direction!</p>
   <br>
   <form id="survey">
-    <h3>Which animal would you rather spend the day with?</h3>
+  <h3>Which animal would you rather spend the day with?</h3>
     <input type="radio" name="animal" value="redPanda">
     <label for="redPanda">Red Panda</label>
     <input type="radio" name="animal" value="manatee">
     <label for="manatee">Manatee</label>
     <br>
     <button type="submit">Find Out!</button>
-
+  <div id= "animal" class="hidden">
+    <p id="output"></p>
+  </div>
     <h3>Which color do you like better?</h3>
     <input type="radio" name="color" value="periwinkle">
     <label for="periwinkle">Periwinkle</label>
@@ -57,12 +59,7 @@
   </form>
 </div>
 
-
-
-
-
-  <!-- //First attempt at result formatting
-    <div id="rubyHide" class="hidden">
+    <div id="ruby" class="hidden">
   <h2>Result</h2>
    <p id="ruby" type="text" value="ruby"></p>
     <label for="ruby">Ruby</label>

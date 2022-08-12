@@ -16,12 +16,14 @@ window.addEventListener("load", function() {
     const food = document.getElementsByName("food").value;
   });
 
-  let animal = document.querySelector("animal");
+  let result = animal = document.querySelector("animal");
   if(animal === "redPanda") {
     result = document.getElementById("ruby").removeAttribute("class", "hidden");
   } else if (animal === "manatee") {
     result = document.getElementById("c#").removeAttribute("class", "hidden");;
   }
+  document.getElementById("output").innerText = animal;
+  document.querySelector("div#animal").removeAttribute("class", "hidden");
 
   let color = document.querySelector("color");
   if(color === "periwinkle") {
@@ -50,10 +52,6 @@ window.addEventListener("load", function() {
   } else if(food === "tacos") {
     result = document.getElementById("ruby").removeAttribute("class", "hidden");;
   }
+  
   });
  
-
-
-
-  // document.getElementById("output").innerText = result;
-  // document.querySelector("div#output").removeAttribute("class");
