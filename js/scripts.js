@@ -20,7 +20,7 @@ function createLanguageResults(userSelection) {
   else if (selectedAnimal === "Red Panda" && selectedMushroom === "Cordycep") {
      return "Python";
   }
-  else return "C#"; b
+  else return "C#";
 };
 
 
