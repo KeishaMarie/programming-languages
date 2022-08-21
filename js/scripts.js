@@ -1,14 +1,15 @@
-// UI Logic
 window.onload = function() {
   let form = document.querySelector("form");
   form.onsubmit = function(event) {
     event.preventDefault();
     console.log('event default prevented')
     
-    let selectedAnimal = document.querySelector('input[name="animal"]');
-    let selectedMushroom = document.querySelector('input[name="mushroom"]');
+    let selectedAnimal = document.querySelector('input[name="animal"]:checked').value;
+    let selectedMushroom = document.querySelector('input[name="mushroom"]:checked').value;
     console.log(selectedAnimal, selectedMushroom)
-    document.getElementById("languageOutput").innerText = ;
+    languageMatch = createLanguageResults(selectedAnimal, selectedMushroom);
+    console.log(languageMatch)
+    document.getElementById("languageOutput").innerText = languageMatch;
   }
 };
 
@@ -17,15 +18,7 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", createLanguageResults);
 });
 
-// const selectedAnimal = document.querySelector("input#animal").value;
-// // const color = document.querySelector("color").value;
-// const selectedMushroom = document.querySelector("input#mushroom").value;
-// // const flower = document.querySelector("flower").value;
-// // const food = document.querySelector("food").value;
-
 function createLanguageResults(selectedAnimal, selectedMushroom) {
-  // let selectedAnimal;
-  // let selectedMushroom;
   if (selectedAnimal === "Red Panda" && selectedMushroom === "Bioluminescent") {
      return "Ruby";
   }
