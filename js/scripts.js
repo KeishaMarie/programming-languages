@@ -1,19 +1,31 @@
 // UI Logic
-window.onload = fucntion() {
+window.onload = function() {
   let form = document.querySelector("form");
   form.onsubmit = function(event) {
     event.preventDefault();
+    console.log('event default prevented')
+    
+    let selectedAnimal = document.querySelector('input[name="animal"]');
+    let selectedMushroom = document.querySelector('input[name="mushroom"]');
+    console.log(selectedAnimal, selectedMushroom)
+    document.getElementById("languageOutput").innerText = ;
   }
 };
 
 window.addEventListener("load", function() {
   const form = document.getElementById("survey")
-  form.addEventListener("submit", languageResults);
+  form.addEventListener("submit", createLanguageResults);
 });
 
-function createLanguageResults(userSelection) {
-  let selectedAnimal = document.querySelector('input[name="animal"]');
-  let selectedMushroom = document.querySelector('input[name="mushroom"]');
+// const selectedAnimal = document.querySelector("input#animal").value;
+// // const color = document.querySelector("color").value;
+// const selectedMushroom = document.querySelector("input#mushroom").value;
+// // const flower = document.querySelector("flower").value;
+// // const food = document.querySelector("food").value;
+
+function createLanguageResults(selectedAnimal, selectedMushroom) {
+  // let selectedAnimal;
+  // let selectedMushroom;
   if (selectedAnimal === "Red Panda" && selectedMushroom === "Bioluminescent") {
      return "Ruby";
   }
