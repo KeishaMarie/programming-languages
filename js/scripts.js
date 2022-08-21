@@ -11,22 +11,18 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", languageResults);
 });
 
-const animal = document.querySelector("animal").value;
-const color = document.querySelector("color").value;
-const mushroom = document.querySelector("mushroom").value;
-const flower = document.querySelector("flower").value;
-const food = document.querySelector("food").value;
-
-let languageResults;
-  if (selectedAnimal === "Red Panda" && selectedMushroom === "Amanita") {
-     languageResults = "Ruby";
+function createLanguageResults(userSelection) {
+  let selectedAnimal = document.querySelector('input[name="animal"]');
+  let selectedMushroom = document.querySelector('input[name="mushroom"]');
+  if (selectedAnimal === "Red Panda" && selectedMushroom === "Bioluminescent") {
+     return "Ruby";
   }
   else if (selectedAnimal === "Red Panda" && selectedMushroom === "Cordycep") {
-     languageResults = "Python";
+     return "Python";
   }
-  else {
-    languageResults = "C#";
-  }
+  else return "C#"; b
+};
+
 
 
 
