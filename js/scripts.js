@@ -19,10 +19,10 @@ window.addEventListener("load", function() {
 });
 
 function createLanguageResults(selectedAnimal, selectedMushroom) {
-  if (selectedAnimal === "Red Panda" && selectedMushroom === "Bioluminescent") {
+  if (selectedAnimal === "redPanda" && selectedMushroom === "biolumMushroom") {
      return "Ruby";
   }
-  else if (selectedAnimal === "Red Panda" && selectedMushroom === "Cordycep") {
+  else if (selectedAnimal === "redPanda" && selectedMushroom === "Cordycep") {
      return "Python";
   }
   else return "C#";
